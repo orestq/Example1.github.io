@@ -1,0 +1,46 @@
+@media (max-width: 375px) {
+  .gallery-item img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 826px) {
+  .header-nav {
+    display: none;
+    margin: -15px;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .header-nav-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.392);
+    width: 100%;
+  }
+  .header-nav-list-item {
+    margin: 10px 0;
+  }
+  .header-logo img {
+    width: 200px;
+    margin-top: 10px;
+  }
+  .header-content {
+    padding: 40px 0 40px;
+  }
+  .footer-content {
+    text-align: center;
+  }
+  .footer-logo {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-btn {
+    margin-top: 20px;
+    padding: 20px 40px 20px 40px;
+  }
+}
