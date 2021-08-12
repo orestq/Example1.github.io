@@ -18,6 +18,8 @@
     text-align: center;
     background: rgba(255, 0, 0, 0.392);
     width: 100%;
+    position: absolute;
+    left: 0;
   }
   .header-nav-list-item {
     margin: 10px 0;
