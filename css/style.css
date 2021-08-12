@@ -37,7 +37,7 @@ a {
 .header-nav-list-item {
   border-radius: 10px;
   transition: 0.5s;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 10px 5px 10px;
 }
 .header-nav-list-item:hover {
   background: black;
@@ -194,7 +194,11 @@ a {
   margin: 30px 0;
   font-weight: 700;
 }
-
+.pricing-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .card-item {
   max-width: 315px;
   width: 100%;
@@ -206,20 +210,6 @@ a {
   flex-direction: column;
   border-radius: 10px;
   position: relative;
-}
-
-.card-item:nth-child(3) .t {
-  box-sizing: border-box;
-  width: 60px;
-  height: 60px;
-  border-top: solid 30px rgb(200, 30, 50);
-  border-left: solid 30px rgb(200, 30, 50);
-  border-top-left-radius: 12px;
-  border-right: solid 30px transparent;
-  border-bottom: solid 30px transparent;
-  position: absolute;
-  top: -20px;
-  left: 0;
 }
 
 .card-item:nth-child(3) button {
@@ -239,11 +229,19 @@ a {
   color: #fff;
 }
 
-.triangle-topleft {
-  width: 0;
-  height: 0;
-  border-top: 100px solid red;
-  border-right: 100px solid transparent;
+.action {
+  content: "";
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  border-top: solid 30px rgb(200, 30, 50);
+  border-left: solid 30px rgb(200, 30, 50);
+  border-top-left-radius: 12px;
+  border-right: solid 30px transparent;
+  border-bottom: solid 30px transparent;
+  position: absolute;
+  top: 0px;
+  left: 0;
 }
 
 .card-item-title {
@@ -270,7 +268,7 @@ a {
   outline: none;
   border: none;
   background: #130e27;
-  padding: 15px 85px 15px 85px;
+  padding: 15px 65px 15px 65px;
   color: #fff;
   margin: 30px 0 10px 0;
   border-radius: 10px;
