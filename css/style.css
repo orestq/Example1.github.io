@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Raleway", sans-serif;
+}
+
 .container {
   max-width: 1200px;
 }
@@ -13,7 +17,10 @@ li {
 a {
   text-decoration: none;
 }
+p {
+  font-family: "Roboto Mono", monospace;
 
+}
 .row {
   justify-content: center;
 }
@@ -22,6 +29,7 @@ a {
   background: url(../image/bg.png);
   position: relative;
   background-attachment: fixed;
+  font-family: "Roboto Mono", monospace;
   /* height: 100vh; */
 }
 
@@ -34,11 +42,13 @@ a {
   justify-content: space-between;
   text-transform: uppercase;
 }
+
 .header-nav-list-item {
   border-radius: 10px;
   transition: 0.5s;
   padding: 5px 10px 5px 10px;
 }
+
 .header-nav-list-item:hover {
   background: black;
   border-radius: 10px;
@@ -57,6 +67,8 @@ a {
   font-size: 60px;
   text-transform: uppercase;
   max-width: 350px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
 .header-content-title span {
@@ -129,6 +141,8 @@ a {
   margin-top: 30px;
   font-size: 40px;
   text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
 .services-title span {
@@ -149,6 +163,7 @@ a {
 .services-items p {
   margin: 40px 0px 40px;
   font-size: 20px;
+  font-family: "Roboto Mono", monospace;
 }
 
 .services-item {
@@ -163,6 +178,7 @@ a {
 
 .services-bottom-line p {
   font-size: 20px;
+  font-family: "Roboto Mono", monospace;
 }
 
 .services-btn {
@@ -342,6 +358,8 @@ a {
 }
 .footer-content p {
   color: #fff;
+  font-family: "Roboto Mono", monospace;
+
 }
 
 .footer-content span {
