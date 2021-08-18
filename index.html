@@ -14,8 +14,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Mono:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js" defer></script>
     <script src="js/app.js" defer></script>
     <title>example</title>
+
 </head>
 
 <body>
@@ -31,16 +33,16 @@
                 </div>
 
                 <div class="col-xl-6 col-md-7">
-                    <nav class="header-nav">
-                        <ul class="header-nav-list">
-                            <li class="header-nav-list-item"><a href="#">home</a></li>
-                            <li class="header-nav-list-item"><a href="#">about</a></li>
-                            <li class="header-nav-list-item"><a href="#">services</a></li>
-                            <li class="header-nav-list-item"><a href="#">gallery</a></li>
-                            <li class="header-nav-list-item"><a href="#">contact</a></li>
-                        </ul>
-                    </nav>
+                    <ul class="header-nav-list">
+                        <li class="header-nav-list-item"><a href="#">home</a></li>
+                        <li class="header-nav-list-item"><a href="#">about</a></li>
+                        <li class="header-nav-list-item"><a href="#">services</a></li>
+                        <li class="header-nav-list-item"><a href="#">gallery</a></li>
+                        <li class="header-nav-list-item"><a href="#">contact</a></li>
+                    </ul>
                     <div class="mobile-menu" id="mobile-menu">
+                        <span></span>
+                        <span></span>
                         <span></span>
                     </div>
                 </div>
@@ -166,7 +168,7 @@
                                 Management No</p>
                             <span>-</span>
                             <span>-</span>
-                            <button class="card-item-btn" type="button">TRY</button>
+                            <button class="card-item-btn toggle-popup-start" type="button">TRY</button>
                         </div>
 
                         <div class="card-item">
@@ -177,7 +179,7 @@
                                 Management No</p>
                             <span>-</span>
                             <span>-</span>
-                            <button class="card-item-btn" type="button">SIGN UP</button>
+                            <button class="card-item-btn toggle-popup-business" type="button">SIGN UP</button>
                             <div class="action">
                                 <p class="card-popular"> Popular</p>
                             </div>
@@ -191,7 +193,7 @@
                                 Management No</p>
                             <span>-</span>
                             <span>-</span>
-                            <button class="card-item-btn" type="button">SIGN</button>
+                            <button class="card-item-btn toggle-popup-professional" type="button">SIGN</button>
                         </div>
                     </div>
                 </div>
@@ -268,6 +270,61 @@
 
             </div>
         </div>
+
+        <div class="popup-start">
+            <div class="popup-start-overlay toggle-popup-start"> </div>
+            <div class="wrapper">
+                <div> <span class="close toggle-popup-start">X</span></div>
+
+                <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate nisi veniam iste, culpa,
+                    totam
+                    veritatis deserunt necessitatibus obcaecati quia sed error itaque rerum illo hic accusamus
+                    blanditiis tempore minima repudiandae.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rerum sunt, aspernatur vero
+                    veritatis
+                    accusantium, labore exercitationem debitis quidem quaerat soluta laborum, adipisci ut doloremque
+                    obcaecati. Tempore fuga porro excepturi?</p>
+                <button type="button" class="popup-start-btn toggle-popup-start">BUY NOW</button>
+            </div>
+        </div>
+
+
+        <div class="popup-business">
+            <div class="popup-business-overlay toggle-popup-business"> </div>
+            <div class="wrapper">
+                <div> <span class="close toggle-popup-business">X</span></div>
+
+                <h1> Along with its history, mazes are still a part of the modern world, with these structures and
+                    puzzles becoming places that visitors can enjoy. Being surrounded by green hedges and finding your
+                    way to the goal, you can experience these places for yourself in many places around the world.</h1>
+                <p>Historically, the first recorded labyrinth was the Egyptian Labyrinth, described by the Greek writer
+                    Herodotus. The structure was said to be surrounded by a wall with 3,000 chambers both above and
+                    below ground. It is also said that the chambers below ground contained the tombs of kings. Another
+                    famous labyrinth is the Cretan Labyrinth. This structure is found in ancient Greek mythology,
+                    created by Daedulus, and containing the minotaur at its center.
+                </p>
+                <button type="button" class="popup-business-btn toggle-popup-business">BUY NOW</button>
+            </div>
+        </div>
+
+        <div class="popup-professional">
+            <div class="popup-professional-overlay toggle-popup-professional"> </div>
+            <div class="wrapper">
+                <div> <span class="close toggle-popup-professional">X</span></div>
+
+                <h1> The Ashcombe Maze, located in Shoreham, Australia, is a beautiful maze with a stunning visual
+                    appearance. The maze has soft edges made of over 1000 Cupressus macrocarpa, also known as the
+                    Monterey cypress. These plants are carefully trimmed three or four times a year. This is to
+                    continually maintain the amazing shapes and light green color of the maze.</h1>
+                <p>The creation and structure of the maze makes it an enjoyable puzzle for visitors. Your goal is to
+                    travel through the two halves of the maze. The structure also contains an interesting center space.
+                    Here you might take a moment to relax from the first half of the maze and prepare yourself for the
+                    new puzzles in the second half.
+                </p>
+                <button type="button" class="popup-professional-btn toggle-popup-professional">BUY NOW</button>
+            </div>
+        </div>
+
 
     </footer>
 
