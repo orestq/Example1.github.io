@@ -42,7 +42,6 @@ $(".toggle-popup-start").on('click', function (e) {
 
 $(".toggle-popup-business").on('click', function (e) {
     e.preventDefault();
-    $(".popup-business").html()
     $(".popup-business").toggleClass("show-modal");
 });
 
