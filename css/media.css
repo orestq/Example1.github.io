@@ -9,7 +9,8 @@
     display: none;
     margin: -15px;
   } */
-  .mobile-menu {
+  .mobile-menu,
+  .mobile-menu-1 {
     display: block;
   }
   .header-nav-list {
@@ -50,11 +51,15 @@
   }
 }
 
+@media (min-width: 768px) {
+  .menus:nth-child(n+3) .header-nav-list {
+    opacity: 0;
+  }
+}
+
 .show {
   transition: all 0.3s ease-in;
   transform: translatey(35%);
   opacity: 1;
   display: flex;
 }
-
-
