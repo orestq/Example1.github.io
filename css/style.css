@@ -11,6 +11,12 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+input {
+  outline: none;
+}
+input:focus {
+  border: 1px solid green;
+}
 button {
   cursor: pointer;
 }
@@ -100,7 +106,7 @@ p {
   max-width: 400px;
 }
 
-.form {
+.header-form {
   padding: 20px;
 }
 
@@ -111,7 +117,7 @@ p {
 }
 
 .form-input {
-  margin: 10px 0px 10px;
+  margin: 20px 0px 4px;
   padding: 10px;
   border-radius: 5px;
   background-color: #eeee;
@@ -119,14 +125,39 @@ p {
   width: 100%;
 }
 
+.form-check-el {
+  margin: 20px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.form-select {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.933);
+}
+
 .form-checkbox {
   width: 90%;
   margin: 0px 20px 0px;
 }
 
-.form-btn {
+.form-radio-items {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-agree {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.send-form {
   width: 100%;
-  margin: 10px 0px 10px;
+  margin: 30px 0px 10px;
   padding: 10px;
   border-radius: 5px;
   background: rgba(141, 14, 14, 0.933);
@@ -135,12 +166,44 @@ p {
   text-transform: uppercase;
   font-weight: 700;
   transition: 0.5s;
+  cursor: pointer;
 }
 
-.form-btn:hover {
+.send-form:hover {
   background: rgba(241, 14, 14, 3.83);
   opacity: 0.8;
   transition: 0.5s;
+}
+
+.nameError,
+.emailError,
+.phoneError,
+.countryError {
+  opacity: 0;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 20px;
+}
+.selectError {
+  opacity: 0;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: red;
+  margin-left: 30px;
+}
+.errorBorder {
+  border: 1px solid red;
+}
+
+.showError {
+  opacity: 1;
+}
+
+.hideError {
+  opacity: 0;
 }
 
 .services-title {
@@ -636,9 +699,10 @@ div.mobile-menu:nth-child(3) {
   overflow: visible;
   opacity: 1;
   transition: all 0.4s ease;
-  bottom: 51%;
-  right: 50%;
-  transform: translate(50%, 50%);
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
 }
 
 /* Modal 2*/
